@@ -26,7 +26,7 @@
                         <a href="index.html" class="ws-link"><span class="web">Web</span>Studio</a>
             
                     <ul class="nav-list">
-                        <li><a class="nav-links" href="https://google.com">Agencja</a></li>
+                        <li><a class="nav-links agency" href="index.html">Agencja</a></li>
                         <li><a class="nav-links" href="portfolio.html">Portfolio</a></li>
                         <li><a class="nav-links" href="https://google.com">Kontakt</a></li>
                     </ul>
@@ -51,7 +51,7 @@
                 </div>
 
                 <div class="order-button">
-                    <button class="button-main" type="button">Zamów usługę</button>
+                    <button data-modal-open class="button-main" type="button">Zamów usługę</button>
                 </div>
             </div>
 
@@ -101,13 +101,25 @@
     </section>
 
     <!--O NAS-->
-    <section> 
+<section> 
     <div class="container">
             <div class="what-we-do"><h2>Czym się zajmujemy</h2></div>
         <ul class="our-work">
-            <li><img class="about-us-img" src="images/o_nas.jpg" alt="osoba pracująca na tablecie i komputerze" width="370" height="294"></li>
-            <li><img class="about-us-img" src="images/o_nas_1.jpg" alt="osoba pracująca na telefonie komórkowym i laptopie" width="370" height="294"></li>
-            <li><img class="about-us-img" src="images/o_nas_2.jpg" alt="osoba pracująca na tablecie" width="370" height="294"></li>
+            <li><img class="about-us-img" src="images/o_nas.jpg" alt="osoba pracująca na tablecie i komputerze" width="370" height="294">
+                <div class="about-us-title">
+                    <p class="about-us-text">Aplikacje komputerowe</p>
+                </div>
+            </li>
+            <li><img class="about-us-img" src="images/o_nas_1.jpg" alt="osoba pracująca na telefonie komórkowym i laptopie" width="370" height="294">
+                <div class="about-us-title">
+                    <p class="about-us-text">Aplikacje mobilne</p>
+                </div>
+            </li>
+            <li><img class="about-us-img" src="images/o_nas_2.jpg" alt="osoba pracująca na tablecie" width="370" height="294">
+                <div class="about-us-title">
+                    <p class="about-us-text">Rozwiązania graficzne</p>
+                </div>
+            </li>
         </ul>
     </div>
 </section>
@@ -228,5 +240,10 @@
     </div>
 </footer>
 
+<div class="modal is-hidden" data-modal>
+    <button data-modal-close>CLOSE</button>
+</div>
+
+<script src="./js/modal.js"></script>
 </body>
 </html>
