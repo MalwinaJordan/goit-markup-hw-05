@@ -87,7 +87,6 @@ line-height: 100%;
 .hero {
     max-width: 1600px;
     height: 600px;
-    background-color: #2F303A;
     background-image: url("../images/img-main-background.jpg");
     position: relative;
 }
